@@ -1,0 +1,14 @@
+{
+  "name": "scroll-anime",
+  "version": "1.0.0",
+  "description": "scroll animation using css",
+  "main": "index.js",
+  "scripts": {
+    "compile-css": "sass --no-source-map ./scroll.scss ./scroll.css --watch"
+  },
+  "author": "Muhammed Aslam",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.80.2"
+  }
+}

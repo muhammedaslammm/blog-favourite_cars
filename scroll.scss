@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-color: rgb(255, 251, 245);
+  color: rgb(27, 27, 27);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 60rem;
+  padding: 2rem 0;
+  text-align: justify;
+  font-size: 1.8rem;
+}
+
+// details section
+.details__section {
+  margin: 8rem 0 6rem;
+  .details__header {
+    margin-bottom: 2rem;
+    h1 {
+      font-size: 3rem;
+      font-weight: 500;
+      opacity: 0;
+      animation: fade-in-main ease-in 1s forwards;
+    }
+  }
+  .details__description {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    opacity: 0;
+    animation: fade-in-main ease-in 1s forwards;
+  }
+}
+
+// cars section
+.cars__section {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-bottom: 15rem;
+  .cars__intro {
+    p {
+      opacity: 0;
+      animation: fade-in-text forwards;
+      animation-timeline: view();
+      animation-range-start: 9rem;
+      animation-range-end: 55rem;
+    }
+  }
+
+  //   give more delay to the head and image
+  .car {
+    .car__head {
+      font-size: 2.2rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fade-in-heading forwards;
+      animation-timeline: view();
+      animation-range: 4rem 50rem;
+    }
+    .car__image {
+      width: 100%;
+      margin-bottom: 2rem;
+      img {
+        width: 100%;
+        opacity: 0;
+        animation: fade-in-heading forwards, image-scale forwards;
+        animation-timeline: view();
+        animation-range: 10rem 63rem;
+      }
+    }
+    .car__note {
+      p {
+        opacity: 0;
+        animation: fade-in-text forwards;
+        animation-timeline: view();
+        animation-range: 8rem 53rem;
+      }
+    }
+  }
+}
+
+footer {
+  h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(142, 142, 142, 0.434);
+    opacity: 0;
+    animation: fade-in-main 1s forwards;
+    animation-timeline: view();
+    animation-range-start: 1rem;
+    animation-range-end: 3rem;
+  }
+}
+
+// fade animations
+
+@keyframes fade-in-main {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-text {
+  from {
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+@keyframes image-scale {
+  from {
+    transform: scale(0.97);
+  }
+  to {
+    transform: sclae(1);
+  }
+}
+@keyframes fade-in-heading {
+  to {
+    opacity: 1;
+  }
+}
