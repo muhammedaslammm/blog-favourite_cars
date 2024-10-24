@@ -13,6 +13,9 @@ body {
   color: rgb(27, 27, 27);
   display: flex;
   justify-content: center;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .container {
