@@ -88,9 +88,10 @@ body::-webkit-scrollbar {
 footer h3 {
   font-size: 1rem;
   font-weight: 300;
-  color: rgba(142, 142, 142, 0.434);
+  color: rgb(32, 32, 32);
   opacity: 0;
   animation: fade-in-main 1s forwards;
+  text-align: center;
   animation-timeline: view();
   animation-range-start: 1rem;
   animation-range-end: 3rem;
