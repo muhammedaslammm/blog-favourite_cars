@@ -1,14 +1,14 @@
 {
-  "name": "scroll-anime",
-  "version": "1.0.0",
-  "description": "scroll animation using css",
-  "main": "index.js",
+  "name": "blog-favourite_cars",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "compile-css": "sass --no-source-map ./scroll.scss ./scroll.css --watch"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "author": "Muhammed Aslam",
-  "license": "ISC",
   "devDependencies": {
-    "sass": "^1.80.2"
+    "vite": "^6.3.1"
   }
 }
